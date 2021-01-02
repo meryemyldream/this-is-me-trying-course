@@ -1,0 +1,16 @@
+title: this-is-me-trying
+description: I'm just here trying to learn coding. Don't know what I'm doing.
+template:
+  repo: this-is-me-trying-template
+  name: this-is-me-trying
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
